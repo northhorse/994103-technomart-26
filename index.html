@@ -8,7 +8,7 @@
     <header>
       <nav>
         <img src="" alt="Логотип Техномарт" width="" height="">
-        <!-- <span>Поиск</span> не знаю как разметить поиск, вроде бы это форма? -->
+        <input type="search" placeholder="Поиск">
         <ul>
           <li><a href="">Закладки</a></li>
           <li><a href="">Корзина</a></li>
@@ -19,10 +19,10 @@
           <p><span>+7 (812) 555-05-55</span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <ul>
             <li>
-              <button type="button">Войти</button>
+              <a href="login.html">Войти</a>
             </li>
             <li>
-              <a htref="">Регистрация</a>
+              <a htref="#">Регистрация</a>
             </li>
           </ul>
         </div>
@@ -221,6 +221,30 @@
           <button type="button">Заблудились? Напишите нам!</button>
         </section>
       </div>
+      <section class="visually-hidden">
+        <img src="img/map-popup.jpg" alt="Мы на карте, Б.Конюшенная ул., 19" width="940" height="446">
+        <button type="button">Закрыть</button>
+      </section>
+      <section class="visually-hidden">
+        <form action="#" method="post">
+          <div>
+            <p>
+              <label for="name-field">Ваше имя:</label>
+              <input type="text" name="for-name" id="name-field" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="email-field">Ваш e-mail</label>
+              <input type="email" name="e-mail" id="email-field" placeholder="email@example.com">
+            </p>
+          </div>
+          <p>
+            <label for="letter-field">Текст письма:</label>
+            <textarea name="letter" id="letter-field">В свободной форме</textarea>
+          </p>
+          <button type="submit">Отправить</button>
+          <button type="button">Закрыть</button>
+        </form>
+      </section>
     </main>
     <footer>
       <nav>
