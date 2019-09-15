@@ -62,13 +62,26 @@
           </ul>
         </div>
         <div>
-          <div>
-            <h3>Дрели</h3>
-            <p>Соседям на радость</p>
-            <a href="catalog.html">Открыть каталог</a>
-            <span>Слайдер влево</span>
-            <span>Слайдер вправо</span>
+          <input type="radio" name="point" id="slide1" checked>
+          <input type="radio" name="point" id="slide2">
+          <div class="slider">
+            <div>
+              <h3>Дрели</h3>
+              <p>Соседям на радость</p>
+              <a href="catalog.html">Открыть каталог</a>
+            </div>
+            <div>
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+              <a href="catalog.html">Открыть каталог</a>
+            </div>
           </div>
+          <div>
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+          </div>
+        </div>
+        <div>
           <ul>
             <li>
               <h3>Скидки 50%</h3>
@@ -171,26 +184,54 @@
         </ul>
       </section>
       <section>
-        <h2>Наши услуги!</h2>
+        <h2 class="visually-hidden">Наши услуги!</h2>
         <h3>Сервисы</h3>
         <p>Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <div>
           <ul>
-            <li>Доставка</li>
-            <li>Гарантия</li>
-            <li>Кредит</li>
+            <li>
+              <label for="deliviry-slide">Доставка</label>
+            </li>
+            <li>
+              <label for="guarantee-slide">Гарантия</label>
+            </li>
+            <li>
+              <label for="credit-slide">Кредит</label>
+            </li>
           </ul>
-          <div>
-            <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем,
-              поднимая его на ваш этаж!
+          <span>Картинка вертикальной черты</span>
+        </div>
+        <div>
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо
+            к вашему подъезду совершенно бесплатно!
+            Ведь мы неплохо заработаем,
+            поднимая его на ваш этаж!
+          </p>
+          <img src="img/deliviry.jpg" width="468" height="261" alt="картинка машинки, доставка">
+          <input type="radio" name="deliviry" id="deliviry-slide" checked>
+        </div>
+        <div>
+            <h3>Гарантия</h3>
+            <p>Если купленный у нас товар поломается или заскрипит,
+              а также в случае пожара, спровоцированного его возгаранием,
+              вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+              сгоревший товар на новый.
+              Дом уж восстановите как-нибудь сами.
             </p>
-          </div>
-          <img src="img/deliviry.jpg" width="468" height="261" alt="картинка машинки, доставка"> <!--это я потренировался-->
+            <img src="img/warranty.jpg" width="468" height="261" alt="картинка, гарантии 100%">
+            <input type="radio" name="guarantee" id="guarantee-slide">
+        </div>
+        <div>
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще!
+              Кредитные консультанты придут вам на помощь.
+            </p>
+            <img src="img/credit.jpg" width="468" height="261" alt="картинка, кредит">
+            <input type="radio" name="guarantee" id="guarantee-slide">
+            <a href="#">Отправить заявку</a>
         </div>
       </section>
       <div>
