@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+
+}
+
+/* Хедер */
+
+.main-navigation {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #f3f7f9;
+}
+
+.container-order {
+  background-color: #293449;
+}
+
+.site-navigation {
+  background-color: #32425c;
+  box-shadow: inset 0 -5px 0 0 #293449;
+}
+
+.main-header-logo {
+  display: block;
+  width: 220px;
+  height: 47px;
+
+  background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(181, 41, 51, 0.24); /*ох и провозился я с ней капец */
+
+}
+
+input[type="search"] {
+  border: none;
+  background-color: #293449;
+}
+
+input[type="search"]::placeholder {
+  color: #ffffff;
+}
+
+.user-order a {
+  color: #ffffff;
+}
+
+.button-order {
+  background-color: #63a63e;
+  border: none;
+  color: #ffffff;
+}
+
+
+.about {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+
+}
+
+.contacts {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.contacts span {
+  font-size: 21px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ee3643;
+  border: 3px solid #ffffff;
+}
+
+.user-login a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.main-header-logo:hover {
+  background-color: #ca2c37;
+  box-shadow: inset 0px -5px 0 0 rgba(154, 33, 42, 0.24);
+}
+
+.button-order:hover {
+  background-color: #5fbb2d;
+}
+
+
+.main-header-logo:active {
+  background-color: #ba2732;
+  box-shadow: inset 0px -5px 0 0 rgba(142, 30, 38, 0.24);
+}
+
+.user-order a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button-order:active {
+  background-color: #518534;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="search"]:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.button-order:focus {
+  background-color: #63a63e;
+}
+
+.user-login a:hover {
+  color: #ee3643;
+}
+
+.user-login a:active {
+  color: rgba(0, 0, 0, 0.3);
+
+}
+
+.site-navigation a:hover {
+  background-color: #293449;
+}
+
+.site-navigation a:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* кусок мейна */
+
+.company-details-container {
+  font-style: "PT Sans", arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+
+}
+
+.company-details-container h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.company-details li {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+
+}
+
+.company-details a,
+.our-contacts button {
+
+  width: 220px;
+  height: 38px;
+
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #ee3643;
+  border-radius: 3px;
+
+
+}
+
+.our-contacts button {
+  border:none;
+}
+
+/* футер */
+
+.main-footer {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.main-footer .logo-container{
+  width: 220px;
+  height: 68px;
+
+  background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(181, 41, 51, 0.24);
+
+}
+
+
+.footer-navigation-list a {
+  color: #ffffff;
+}
+
+.footer-navigation-list .another-color,
+.feed-back a,
+.created-by a {
+  color: #ffd180;
+}
+
+.footer-warp {
+
+  background-color: #293449;
+}
+
+.social-list li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-color: #212a3a;
+}
+
+.footer-navigation-list a:hover,
+.feed-back a:hover,
+.created-by a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation-list a:active {
+  color: rgba(241, 245, 247, 0.5);
+}
+
+.footer-navigation-list .another-color:active {
+  color: rgba(255, 209, 128, 0.5);
+}
+
+.social-list li:hover {
+  background-color: #ef4450;
+}
+
+.feed-back a:active,
+.created-by a:active {
+
+  text-decoration: none;
+  color: #ee3643;
+
+}
+
+/* каталог.хтмл */
+
+.breadcrumbs a {
+  font-family: "PT sans", arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+
+}
+
+.page-title {
+
+  width: 940px;
+  height: 89px;
+
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  background-color: #f2f6f8;
+  text-align: center;
+
+}
