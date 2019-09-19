@@ -16,6 +16,17 @@ li {
 
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Хедер */
 
 .main-navigation {
@@ -152,8 +163,295 @@ input[type="search"]:focus {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* кусок мейна */
+/* индекс хтмл мейн */
 
+.product-navigation li,
+.product-navigation-after li {
+  width: 300px;
+  height: 123px;
+}
+
+/* первая секция промо меню*/
+
+.product-navigation h3,
+.product-navigation-after h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+
+}
+
+.product-navigation a,
+.product-navigation-after a {
+  width: 135px;
+  height: 38px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #000000;
+  opacity: 0.1;
+}
+
+.product-navigation li:first-child {
+  background-color: #ffbf47;
+}
+
+.product-navigation li:nth-child(2) {
+  background-color: #3bbce3;
+}
+
+.product-navigation li:last-child {
+  background-color: #dc91d8;
+}
+
+.product-navigation-after li:first-child{
+  background-color: #8ed78f;
+}
+
+.product-navigation-after li:last-child{
+  background-color: #ffc047;
+}
+
+.slide-1,
+.slide-2 {
+  width: 640px;
+  height: 266px;
+}
+
+.slide-1 {
+  background-color: #887869;
+  background-image: url("../img/slider-img-1.jpg");
+  background-size: cover;
+}
+
+.slide-2 {
+  background-color: #887869;
+  background-image: url("../img/slider-img-2.jpg");
+  background-size: cover;
+}
+
+.slider h3 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.slider p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.slider a {
+  display: block;
+  width: 195px;
+  height: 38px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.product-navigation a:hover,
+.product-navigation-after a:hover {
+  opacity: 0.2;
+}
+
+.product-navigation a:active,
+.product-navigation-after a:active {
+  opacity: 0.3;
+}
+
+.slide-1 a:hover,
+.slide-2 a:hover {
+  background-color: #ca2c37;
+}
+
+.slider a:active {
+  background-color: #ba2732;
+}
+
+/* вторая секция топ-товары*/
+
+.top-product-container,
+.top-manufacturer-container {
+  width: 940px;
+  height: 89px;
+
+  background-color: #f9f5f0;
+}
+
+.top-product-container h2,
+.top-manufacturer-container h2,
+.perforators-info h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.top-product-container a,
+.top-manufacturer-container a {
+
+  width: 253px;
+  height: 38px;
+
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #ee3643;
+}
+
+.top-product-navigation,
+.product-list h3,
+.product-list p {
+  font-family: "PT Sans", arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.top-product-navigation li,
+.product-list li {
+  width: 220px;
+  height: 318px;
+
+  border: 1px solid #eaeaea;
+}
+
+.top-product-navigation h3,
+.product-list h3 {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+
+}
+
+.top-product-navigation p,
+.product-list p{
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.old-price {
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.new-price {
+  width: 141;
+  height: 38px;
+
+  color: #ffffff;
+
+  background-image: url("../img/red-button.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+/* секция три - топ производители */
+
+.top-manufacturer li {
+  width: 220px;
+  height: 145px;
+
+  text-align: center;
+
+
+  border: 1px solid #eaeaea;
+}
+
+/* .top-manufacturer-navigation li:hover {
+
+} не получается у меня копировать код тени с фотошопа в цсс хз, буду тренироваться дальше*/
+
+
+
+/* секция четыре - сервисы */
+
+.service {
+  font-family: "PT Sans", arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #f4f8f9;
+}
+
+.service h2{
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+}
+
+.service h3 {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+/*
+.service-deliviry {
+  background-image: url("../img/deliviry.jpg");
+  background-repeat: no-repeat;
+
+}
+
+.service-warranty {
+  background-image: url("../img/warranty.jpg");
+  background-repeat: no-repeat;
+
+}
+
+.service-deliviry {
+  background-image: url("../img/credit.jpg");
+  background-repeat: no-repeat;
+
+}  чето дич получилась, какаято :DDD*/
+
+.service-navigation li {
+  width: 240px;
+  height: 61px;
+
+  background-color: #32425c;
+  box-shadow:
+    inset 0 1px 0 0 #778394,
+    0 1px 0 0 #6f798a;
+}
+
+.service-navigation label {
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.service-navigation li:hover {
+  background-color: #293449;
+
+  box-shadow:
+    inset 0 1px 0 0 #747e8e,
+    0 1px 0 0 #6f798a;
+}
+
+
+/*  */
 .company-details-container {
   font-style: "PT Sans", arial, sans-serif;
   font-size: 13px;
@@ -272,6 +570,12 @@ input[type="search"]:focus {
 
 /* каталог.хтмл */
 
+
+.product-list li {
+  height: 400px;
+} /* ЭТО удалить, Временно, чтобы видеть кнопки */
+
+
 .breadcrumbs a {
   font-family: "PT sans", arial, sans-serif;
   font-size: 13px;
@@ -293,4 +597,182 @@ input[type="search"]:focus {
   background-color: #f2f6f8;
   text-align: center;
 
+}
+
+.buy {
+  width: 135px;
+  height: 38px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #63a63e;
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 0 -3px 0 0 #367315;
+}
+
+.buy:hover {
+  background-color: #5fbb2d;
+
+}
+
+.buy:active {
+  background-color: #518534;
+  box-shadow: none;
+}
+
+
+.bookmark {
+  width: 135px;
+  height: 38px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+  text-transform: uppercase;
+
+
+  border: 3px solid #63a63e;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.bookmark:hover {
+  border-color: #32425c;
+}
+
+.bookmark:active {
+  border-color: rgba(50, 66, 92, 0.3);
+  color: rgba(50, 66, 92, 0.3);
+}
+
+/* фильтры */
+form {
+  font-family: "PT Sans", arial, sans-serif;
+  text-transform: uppercase;
+}
+.filters-title {
+  width: 220px;
+  height: 38px;
+
+
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+}
+
+form legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+
+}
+
+input[type="range"],
+.filter-price span {
+  background-color: #f7f3ec;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  font-size:15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.filter-button {
+  width: 140px;
+  height: 38px;
+
+  background-color: #ffffff;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+
+}
+
+.sorting-container {
+  width: 700px;
+  height: 138px;   /* высота 38  */
+
+  font-family: "PT Sans", arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background-color: #f7f3ec;
+}
+
+
+.by-price {
+  color: #ee3643;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.by-type,
+.by-fynctional {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #ee3643;
+}
+
+.by-price:hover,
+.by-type:hover,
+.by-fynctional:hover {
+  border-bottom: 1px solid #ee3643;
+}
+
+.by-price:active,
+.by-type:active,
+.by-fynctional:active {
+  border: none;
+  color: #ee3643;
+}
+
+
+
+.paginator li:not(:last-child) {
+  width: 38px;
+  height: 38px
+}
+
+.paginator li:last-child {
+  width: 140px;
+  height: 38px;
+}
+
+.paginator li {
+  text-align: center;
+
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+
+}
+
+.paginator li:hover {
+  border-color: #bdc6ca;
+}
+
+.paginator li:active {
+  border-color: #ee3643;
+}
+
+
+.paginator button {
+  border: none;
+  background-color: #ffffff;
+}
+
+
+.perforators-info {
+  background-color: #f4f8f9;
+}
+
+.perforators-info p {
+  font-family: "PT Sans", arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
 }
