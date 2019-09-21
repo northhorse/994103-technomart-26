@@ -14,17 +14,23 @@
     <header class="main-header">
 
       <nav class="main-navigation">
-        <div class="container-order">
-          <a class="main-header-logo" href="index.html">
-            <img src="img/logo-technomart.svg" alt="Логотип Техномарт" width="110" height="20">
-          </a>
-          <input type="search" placeholder="Поиск">
-          <ul class="user-order">
-            <li><a href="">Закладки</a></li>
-            <li><a href="">Корзина</a></li>
-          </ul>
-          <button class="button-order" type="button">Оформить заказ</button>
-        </div>
+          <div class="container-order">
+              <div class="header-container">
+                <div class="logo-container">
+                  <a class="main-header-logo">
+                    <img src="img/logo-technomart.svg" alt="Логотип Техномарт" width="110" height="20">
+                  </a>
+                  <input type="search" placeholder="Поиск">
+                </div>
+
+                  <ul class="user-order">
+                    <li><a href="">Закладки</a></li>
+                    <li><a href="">Корзина</a></li>
+                    <li><button class="button-order" type="button">Оформить заказ</button></li>
+                  </ul>
+              </div>
+            </div>
+
 
         <div class="main-info">
           <p class="about">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
@@ -52,12 +58,14 @@
     </header>
 
     <main class="container">
-      <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="">Каталог</a></li>
-        <li><a href="">Инструмент</a></li>
-        <li><a href="">Перфораторы</a></li>
-      </ul>
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="">Каталог</a></li>
+          <li><a href="">Инструмент</a></li>
+          <li><a href="">Перфораторы</a></li>
+        </ul>
+      </div>
       <h1 class="page-title">Перфораторы</h1>
 
 
@@ -276,26 +284,27 @@
       </nav>
 
       <div class="footer-warp">
-        <p class="footer-copyrights">
-          © 2010–2019 Компания «Техномарт»<br>
-          Все права защищены
-        </p>
-
-        <div class="footer-social">
+        <div class="container-warp">
+          <p class="footer-copyrights">
+            © 2010–2019 Компания «Техномарт»<br>
+            Все права защищены
+          </p>
           <ul class="social-list">
             <li>vk</li>
             <li>fb</li>
             <li>inst</li>
           </ul>
+          <div class="feed-container">
+            <p class="feed-back">
+              Обратная связь:<br>
+              <a href="#">mail@htmlacademy.ru</a>
+            </p>
+            <p class="created-by">
+              Разработанно -<br>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </p>
+          </div>
         </div>
-        <p class="feed-back">
-          Обратная связь:
-          <a href="#">mail@htmlacademy.ru</a>
-        </p>
-        <p class="created-by">
-          Разработанно -
-          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </p>
       </div>
 
     </footer>
