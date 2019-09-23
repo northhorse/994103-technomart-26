@@ -158,7 +158,6 @@ input[type="search"]::placeholder {
 }
 
 .user-login{
-
   align-self: flex-start;
   display: flex;
 }
@@ -180,7 +179,7 @@ input[type="search"]::placeholder {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 940px;;
+
   margin-top: 40px;
   margin-bottom: 60px;
 }
@@ -256,6 +255,41 @@ input[type="search"]:focus {
 }
 
 /* первая секция промо меню*/
+
+.product-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+  overflow: hidden;
+  padding: 0px;
+}
+
+.big-container {
+  display:flex;
+  justify-content: space-between;
+
+}
+
+.product-navigation-after {
+  padding: 0px;
+  outline: 2px solid yellow;
+}
+
+.product-container-after {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0px;
+  min-height: 267px;
+
+  outline: 2px solid black;
+}
 
 .product-navigation h3,
 .product-navigation-after h3 {
@@ -369,9 +403,32 @@ input[type="search"]:focus {
 
 .top-product-container,
 .top-manufacturer-container {
-  width: 940px;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #f9f5f0;
+}
+
+.top-product-container{
+  margin-top: 53px;
+}
+
+.top-product-container h2 {
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+
+}
+
+.top-product-container a {
+
+  margin-right: 30px;
+  padding-top: 14px;
+  padding-right: 55px;
+  padding-bottom: 14px;
+  padding-left: 55px;
 }
 
 .top-product-container h2,
@@ -387,6 +444,11 @@ input[type="search"]:focus {
 .top-manufacturer-container a {
 
   width: 253px;
+  margin-right: 30px;
+  padding-top: 14px;
+  padding-right: 55px;
+  padding-bottom: 14px;
+  padding-left: 55px;
 
   font-size: 14px;
   line-height: 18px;
@@ -395,6 +457,13 @@ input[type="search"]:focus {
   text-align: center;
 
   background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.top-product-navigation{
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .top-product-navigation,
@@ -445,11 +514,22 @@ input[type="search"]:focus {
 
 .top-manufacturer li {
   width: 220px;
-
+  min-height: 145px;
   text-align: center;
-
+  margin-top: 20px;
   border: 1px solid #eaeaea;
 }
+
+.top-manufacturer-navigation{
+  padding: 0px;
+  /* min-height:310px; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+
 
 /* .top-manufacturer-navigation li:hover {
 
@@ -664,7 +744,7 @@ input[type="search"]:focus {
   margin-right: auto;
   margin-left: auto;
 
-  outline: 2px solid yellowgreen;
+  outline: 2px solid red;
 
 }
 
