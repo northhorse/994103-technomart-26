@@ -130,6 +130,7 @@ input[type="search"]::placeholder {
   justify-content: space-between;
   align-items: center;
   margin-top: 45px;
+  width: 940px;
 
   outline: 2px solid yellowgreen;
 
