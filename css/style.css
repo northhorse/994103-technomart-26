@@ -8,8 +8,6 @@ html {
 
 
 body {
-  margin: 0;
-  padding: 0;
 
   font-family: "Cuprum", Arial, sans-serif;
 
@@ -38,8 +36,7 @@ li {
 
 .container{
   width: 940px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 
   outline: 2px solid greenyellow;
 }
@@ -58,72 +55,168 @@ li {
   background-color: #f3f7f9;
 }
 
-.container-order {
+.top-header {
   width: 100%;
   background-color: #293449;
 }
 
-.header-container {
+.top-header .container {
   display:flex;
-  justify-content: space-between;
+
   align-items: center;
-  width: 940px;
-  margin-right: auto;
-  margin-left: auto;
 
   outline: 2px solid yellow;
 }
 
-.header-container .logo-container {
-  display: flex;
-}
 
-
-.site-navigation {
-  background-color: #32425c;
-  box-shadow: inset 0 -5px 0 0 #293449;
-}
 
 .main-header-logo {
 
   width: 220px;
   height: 47px;
+  /* margin-top: 0px; */
 
   background-color: #ee3643;
+  background-image: url("../img/logo-technomart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 
 }
+.main-header-logo:hover {
+  background-color: #ca2c37;
+  box-shadow: inset 0px -5px 0 0 rgba(154, 33, 42, 0.24);
+}
+
+.main-header-logo:active {
+  background-color: #ba2732;
+  box-shadow: inset 0px -5px 0 0 rgba(142, 30, 38, 0.24);
+}
 
 input[type="search"] {
-  margin-left: 50px;
+  /* margin-left: 15px; */
+  /* position: relative; */
+  width: 270px;
 
   border: none;
   background-color: #293449;
+
+  outline: 1px solid blueviolet;
 }
 
 input[type="search"]::placeholder {
+  padding: 49px;
+
   color: #ffffff;
+
 }
+
+input[type="search"]:focus {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 50px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+/* .img-search::before {  Наверно нужен контейнер для инпута + спан с иконкой, я погуглил на инпут псевдоэлемент не вешается
+  position: absolute;
+  top: 19px;
+  left: 400px;
+  content: "";
+  width: 17px;
+  height: 17px;
+  z-index: 2;
+
+  background-image: url("../img/icon-search.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  outline: 1px solid red;
+} */
+
 
 .user-order{
   display: flex;
   align-items: center;
-  width: 435px;
+  width: 455px;
   justify-content: space-between;
+
+  padding: 0px;
+
+  outline: 1px solid pink;
 
 }
 
 .user-order a {
+  position: relative;
+  padding: 12px 45px;
 
   color: #ffffff;
+
+}
+
+.user-order a:active {
+  background-color: #161d29;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bookmark::before{
+  content: "";
+  position: absolute;
+  z-index: 23;
+
+  left: 17px;
+  width: 14px;
+  height: 16px;
+
+  background-image: url("../img/icon-bookmark.svg");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+
+}
+
+/* .bookmark::before:hover{  Не работает, подумаю потом, сначала сетки
+  opacity: 1;
+} */
+
+.basket::before{
+  content: "";
+  position: absolute;
+  z-index: 23;
+
+  left: 15px;
+  width: 15px;
+  height: 15px;
+
+  background-image: url("../img/icon-cart.svg");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+
 }
 
 .button-order {
-
+  padding: 10px 23px 10px 21px;
   background-color: #63a63e;
   border: none;
   color: #ffffff;
 }
+.button-order:hover {
+  background-color: #5fbb2d;
+}
+
+.button-order:active {
+  background-color: #518534;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button-order:focus {
+  background-color: #63a63e;
+}
+
 
 .main-info {
   display: flex;
@@ -131,9 +224,12 @@ input[type="search"]::placeholder {
   align-items: center;
   margin-top: 45px;
 
+  outline: 1px solid brown;
 }
 
 .about {
+
+  margin-left: 53px;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
@@ -141,13 +237,22 @@ input[type="search"]::placeholder {
 
 }
 
-.contacts {
+
+.contacts  {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
-}
 
+
+}
+/* проблема с прилипанием нижнего абзаца, не знаю как решить */
 .contacts span {
+  position: relative;;
+
+  padding: 9px 49px 5px 71px;
+  margin-top: 88px;
+  margin-bottom: 9px;
+
   font-size: 21px;
   line-height: 21px;
   text-transform: uppercase;
@@ -155,7 +260,22 @@ input[type="search"]::placeholder {
   border: 3px solid #ffffff;
 }
 
+.contacts span::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-phone.svg");
+  background-position:center;
+  background-repeat: no-repeat;
+
+
+}
+
 .user-login{
+  margin-top: 25px;
   align-self: flex-start;
   display: flex;
 }
@@ -165,6 +285,9 @@ input[type="search"]::placeholder {
 }
 
 .user-login a {
+  position:relative;
+  padding: 12px 27px 12px 48px;
+
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -172,60 +295,24 @@ input[type="search"]::placeholder {
   background-color: #ffffff;
 }
 
-.site-navigation{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-
-  margin-top: 40px;
-  margin-bottom: 60px;
+.user-login .registred-link {
+  padding-left: 25px;
 }
 
-.site-navigation li {
-  padding:15px;
+.login-link::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 14px;
+  width: 20px;
+  height: 17px;
+
+  background-image: url("../img/icon-login.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+
 }
-
-.site-navigation a {
-
-  font-size: 17px;
-  line-height: 17px;
-  color: #ffffff;
-}
-
-.main-header-logo:hover {
-  background-color: #ca2c37;
-  box-shadow: inset 0px -5px 0 0 rgba(154, 33, 42, 0.24);
-}
-
-.button-order:hover {
-  background-color: #5fbb2d;
-}
-
-
-.main-header-logo:active {
-  background-color: #ba2732;
-  box-shadow: inset 0px -5px 0 0 rgba(142, 30, 38, 0.24);
-}
-
-.user-order a:active {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.button-order:active {
-  background-color: #518534;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-input[type="search"]:focus {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.button-order:focus {
-  background-color: #63a63e;
-}
-
 .user-login a:hover {
   color: #ee3643;
 }
@@ -235,7 +322,39 @@ input[type="search"]:focus {
 
 }
 
-.site-navigation li:hover {
+
+
+.site-navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-top: 40px;
+  margin-bottom: 60px;
+
+  background-color: #32425c;
+  box-shadow: inset 0 -5px 0 0 #293449;
+
+  outline: 2px solid red;
+}
+
+.site-navigation li {
+  padding: 20px;
+}
+
+.site-navigation a {
+  padding: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.site-navigation a:hover {
   background-color: #293449;
 }
 
@@ -244,34 +363,32 @@ input[type="search"]:focus {
   color: rgba(255, 255, 255, 0.5);
 }
 
+
 /* индекс хтмл мейн */
 
 .product-navigation li,
 .product-navigation-after li {
+  position: relative;
   width: 300px;
+  min-height: 123px;
 
 }
 
 /* первая секция промо меню*/
 
 .product-navigation {
+  margin-top: 59px;
   display: flex;
   justify-content: space-between;
   padding: 0px;
 }
 
-.slider-container {
-  display: flex;
-  flex-direction: column;
-  width: 620px;
-  overflow: hidden;
-  padding: 0px;
-}
-
-.big-container {
+.big-container { /* Название конечно не очень :DD*/
   display:flex;
   justify-content: space-between;
+  align-items: flex-start;
 
+  outline: 1px solid red;
 }
 
 .product-navigation-after {
@@ -279,9 +396,9 @@ input[type="search"]:focus {
   outline: 2px solid yellow;
 }
 
-.product-container-after {
+.product-navigation-after {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: column;
   padding: 0px;
   min-height: 267px;
@@ -291,6 +408,8 @@ input[type="search"]:focus {
 
 .product-navigation h3,
 .product-navigation-after h3 {
+  margin-top: 23px;
+  margin-left: 22px;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -300,7 +419,13 @@ input[type="search"]:focus {
 
 .product-navigation a,
 .product-navigation-after a {
+  position: absolute;
+  display: block;
   width: 135px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  top: 63px;
+  left: 25px;
 
 
   font-size: 14px;
@@ -309,33 +434,145 @@ input[type="search"]:focus {
   color: #ffffff;
   text-align: center;
 
+  border-radius: 3px;
   background-color: #000000;
   opacity: 0.1;
+}
+
+.product-navigation a:hover,
+.product-navigation-after a:hover {
+  opacity: 0.2;
+}
+
+.product-navigation a:active,
+.product-navigation-after a:active {
+  opacity: 0.3;
 }
 
 .product-navigation li:first-child {
   background-color: #ffbf47;
 }
 
+.product-navigation li:first-child::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 213px;
+  width: 44px;
+  height: 65px;
+
+  background-image: url("../img/icon-1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.product-navigation li:first-child::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 240px;
+  width: 60px;
+  height: 59px;
+
+  background-image: url("../img/flag-new.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
 .product-navigation li:nth-child(2) {
   background-color: #3bbce3;
+}
+
+.product-navigation li:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 33px;
+  left: 197px;
+  width: 75px;
+  height: 61px;
+
+  background-image: url("../img/icon-2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 .product-navigation li:last-child {
   background-color: #dc91d8;
 }
 
+.product-navigation li:last-child::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 191px;
+  width: 78px;
+  height: 62px;
+
+  background-image: url("../img/icon-3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
 .product-navigation-after li:first-child{
   background-color: #8ed78f;
 }
 
+.product-navigation-after li:first-child::before{
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 196px;
+  width: 59px;
+  height: 72px;
+
+  background-image: url("../img/icon-4.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .product-navigation-after li:last-child{
+  margin-top: 20px;
   background-color: #ffc047;
+}
+
+.product-navigation-after li:last-child::before{
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 191px;
+  width: 78px;
+  height: 63px;
+
+  background-image: url("../img/icon-5.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Слайдер, с ним я еще повоюю. тут нужно долго втыкать, пока оставлю так. все очень криво */
+
+.slider-container{
+  position: relative;
+  width: 620px;
+  min-height: 266px;
+  padding: 0px;
+  margin: 0px;
+  outline: 2px solid purple;
+}
+
+.slider-container input {
+  position: absolute;
+  z-index: 2;
 }
 
 .slide-1,
 .slide-2 {
-  width: 640px;
+  width: 620px;
+  min-height: 266px;
+  position: absolute;
 }
 
 .slide-1 {
@@ -351,6 +588,8 @@ input[type="search"]:focus {
 }
 
 .slider h3 {
+  padding-top: 21px;
+  padding-left: 24px;
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
@@ -359,6 +598,10 @@ input[type="search"]:focus {
 }
 
 .slider p {
+
+
+
+  margin-top: 2px;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -378,16 +621,6 @@ input[type="search"]:focus {
   border-radius: 3px;
 }
 
-.product-navigation a:hover,
-.product-navigation-after a:hover {
-  opacity: 0.2;
-}
-
-.product-navigation a:active,
-.product-navigation-after a:active {
-  opacity: 0.3;
-}
-
 .slide-1 a:hover,
 .slide-2 a:hover {
   background-color: #ca2c37;
@@ -396,6 +629,9 @@ input[type="search"]:focus {
 .slider a:active {
   background-color: #ba2732;
 }
+
+
+
 
 /* вторая секция топ-товары*/
 
@@ -412,22 +648,16 @@ input[type="search"]:focus {
   margin-top: 53px;
 }
 
-.top-product-container h2 {
+.top-product-container h2,
+.top-manufacturer-container h2 {
 
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+  margin-top: 29px;
+  margin-bottom: 26px;
+  margin-left: 30px;
 
+  outline: 1px solid blue;
 }
 
-.top-product-container a {
-
-  margin-right: 30px;
-  padding-top: 14px;
-  padding-right: 55px;
-  padding-bottom: 14px;
-  padding-left: 55px;
-}
 
 .top-product-container h2,
 .top-manufacturer-container h2,
@@ -442,11 +672,10 @@ input[type="search"]:focus {
 .top-manufacturer-container a {
 
   width: 253px;
+
   margin-right: 30px;
-  padding-top: 14px;
-  padding-right: 55px;
-  padding-bottom: 14px;
-  padding-left: 55px;
+  padding-top: 12px;
+  padding-bottom: 10px;
 
   font-size: 14px;
   line-height: 18px;
@@ -461,6 +690,7 @@ input[type="search"]:focus {
 .top-product-navigation{
   padding: 0px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -471,6 +701,14 @@ input[type="search"]:focus {
   font-weight: bold;
   text-align: center;
 }
+
+.top-product-navigation li{
+  display: flex;
+  flex-direction: column;
+
+
+}
+
 .top-product-navigation li,
 .product-list li {
   width: 220px;
@@ -483,6 +721,7 @@ input[type="search"]:focus {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
+  order: 1;
 
 }
 
@@ -495,10 +734,15 @@ input[type="search"]:focus {
 .old-price {
   color: #a9a9a9;
   text-decoration: line-through;
+  order: 2;
 }
 
 .new-price {
   width: 141;
+  margin-top: auto;
+  order: 3;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   color: #ffffff;
 
@@ -527,11 +771,16 @@ input[type="search"]:focus {
   align-content: space-between;
 }
 
+.top-manufacturer-navigation li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 /* .top-manufacturer-navigation li:hover {
 
-} кажись разобрался!*/
+} еще тень нарисовать*/
 
 
 
@@ -547,6 +796,7 @@ input[type="search"]:focus {
 }
 
 .service h2{
+  padding-top: 63px;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -559,24 +809,57 @@ input[type="search"]:focus {
   text-transform: uppercase;
   color: #32425c;
 }
-/*
+
+.service-wrap {
+  display: flex;
+  justify-content: flex-start;
+
+  outline: 1px solid red;
+}
+
+
 .service-deliviry {
+  margin-left: 80px;
+  width: 468px;
+  height: 261px;
+
   background-image: url("../img/deliviry.jpg");
   background-repeat: no-repeat;
 
 }
-
+/*
 .service-warranty {
   background-image: url("../img/warranty.jpg");
   background-repeat: no-repeat;
 
 }
 
-.service-deliviry {
+.service-credit {
   background-image: url("../img/credit.jpg");
   background-repeat: no-repeat;
 
 }  чето дич получилась, какаято :DDD*/
+.service-navigation{
+  position: relative;
+  padding: 0px;
+  padding-bottom: 100px;
+  margin-top: 50px;
+}
+
+.service-navigation::after{
+  content: "";
+
+  position: absolute;
+  top: -35px;
+  left: 230px;
+
+  width: 10px;
+  height: 279px;
+
+  background-image: url("../img/partition.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .service-navigation li {
   width: 240px;
@@ -588,6 +871,11 @@ input[type="search"]:focus {
 }
 
 .service-navigation label {
+  display:block;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 21px;
+
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
@@ -600,6 +888,11 @@ input[type="search"]:focus {
   box-shadow:
     inset 0 1px 0 0 #747e8e,
     0 1px 0 0 #6f798a;
+}
+
+.service-navigation label:active{
+  background-color: #ffffff;
+  color: #32425c;
 }
 
 
@@ -641,13 +934,34 @@ input[type="search"]:focus {
   text-transform: uppercase;
 }
 
+.deliviry-company {
+  position: relative;
+  padding: 0px;
 
-.company-details li {
+}
+.deliviry-company li {
+  margin-left: 20px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
 
 }
+
+/* .deliviry-company li::before { не работает
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 10px;
+
+
+  width: 25px;
+  height: 2px;
+
+
+  background-image: url("../img/red-line.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+} */
 
 .company-details a,
 .our-contacts button {
@@ -680,11 +994,8 @@ input[type="search"]:focus {
   background-color: #32425c;
 }
 
-.footer-navigation {
+.main-footer .container {
   display: flex;
-  width: 940px;
-  margin-right: auto;
-  margin-left: auto;
 
   outline: 2px solid yellowgreen;
 }
@@ -729,18 +1040,15 @@ input[type="search"]:focus {
   color: #ffd180;
 }
 
-.footer-warp {
+.footer-bottom {
   width: 100%;
 
   background-color: #293449;
 }
 
-.container-warp{
+.footer-bottom .container{
   display: flex;
   justify-content: space-between;
-  width: 940px;
-  margin-right: auto;
-  margin-left: auto;
 
   outline: 2px solid red;
 
@@ -857,7 +1165,7 @@ input[type="search"]:focus {
 }
 
 
-.bookmark {
+.add-bookmark {
   width: 135px;
 
   font-size: 14px;
@@ -871,11 +1179,11 @@ input[type="search"]:focus {
   background-color: #ffffff;
 }
 
-.bookmark:hover {
+.add-bookmark:hover {
   border-color: #32425c;
 }
 
-.bookmark:active {
+.add-bookmark:active {
   border-color: rgba(50, 66, 92, 0.3);
   color: rgba(50, 66, 92, 0.3);
 }
