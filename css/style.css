@@ -178,9 +178,13 @@ input[type="search"]:focus {
 
 }
 
-/* .bookmark::before:hover{  Не работает, подумаю потом, сначала сетки
+.bookmark:hover::before{
   opacity: 1;
-} */
+}
+
+.bookmark:active::before{
+  opacity: 0.5;
+}
 
 .basket::before{
   content: "";
@@ -197,6 +201,15 @@ input[type="search"]:focus {
   opacity: 0.3;
 
 }
+
+.basket:hover::before{
+  opacity: 1;
+}
+
+.basket:active::before{
+  opacity: 0.5;
+}
+
 
 .button-order {
   padding: 10px 23px 10px 21px;
@@ -310,8 +323,6 @@ input[type="search"]:focus {
   background-image: url("../img/icon-login.svg");
   background-position: center;
   background-repeat: no-repeat;
-
-
 }
 .user-login a:hover {
   color: #ee3643;
@@ -321,6 +332,29 @@ input[type="search"]:focus {
   color: rgba(0, 0, 0, 0.3);
 
 }
+
+.login-link:hover::before {
+  fill: #000000;
+}
+
+.user-container {
+  min-height: 49px;
+  width: 299px;
+
+  background-color: #ffffff;
+}
+
+/* .user-logined {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+} */
+
+
+
+
+
 
 
 
@@ -392,6 +426,7 @@ input[type="search"]:focus {
 }
 
 .product-navigation-after {
+  margin: 0px;
   padding: 0px;
   outline: 2px solid yellow;
 }
@@ -846,7 +881,7 @@ input[type="search"]:focus {
   margin-top: 50px;
 }
 
-.service-navigation::after{
+/* .service-navigation::after{
   content: "";
 
   position: absolute;
@@ -859,7 +894,7 @@ input[type="search"]:focus {
   background-image: url("../img/partition.png");
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 .service-navigation li {
   width: 240px;
@@ -1189,6 +1224,58 @@ input[type="search"]:focus {
 }
 
 /* фильтры */
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.filter-manufacturer ul,
+.network-filter ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.product-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.product-list li {
+  margin-bottom: 20px;
+}
+
+.sorting-container{
+  display: flex;
+
+  outline:1px solid green;
+}
+
+.sorting-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  padding: 0px;
+
+  outline:1px solid red;
+}
+
+
+.content-container {
+  display: flex;
+}
+
+.paginator {
+  display: flex;
+}
+
+
 form {
   font-family: "PT Sans", arial, sans-serif;
   text-transform: uppercase;
@@ -1268,7 +1355,7 @@ input[type="radio"] {
 }
 
 
-
+/* убрать ширину сделать через ссылку + падинги */
 .paginator li:not(:last-child) {
   width: 38px;
 }
@@ -1293,6 +1380,7 @@ input[type="radio"] {
   border-color: #ee3643;
 }
 
+/*  */
 
 .paginator button {
   border: none;
