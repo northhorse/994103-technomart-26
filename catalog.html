@@ -23,7 +23,7 @@
 
             <ul class="user-order">
               <li><a class="bookmark" href="">Закладки</a></li>
-              <li><a class="basket" href="">Корзина</a></li>
+              <li><a class="basket get-item" href="">Корзина</a></li>
               <li><button class="button-order" type="button">Оформить заказ</button></li>
             </ul>
           </div>
@@ -34,21 +34,6 @@
             <p class="about">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
             <p class="contacts"><span>+7 (812) 555-05-55</span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
-            <!-- <ul class="user-login">
-              <li>
-                <a class="login-link" href="login.html">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
-                    <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
-                    <path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164
-                    0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
-                  </svg>Войти
-                </a>
-              </li>
-
-              <li>
-                <a class="registred-link" htref="#">Регистрация</a>
-              </li>
-            </ul> -->
 
             <ul class="user-logined">
               <li>
@@ -173,10 +158,10 @@
             <div class="sorting-container">
               <h3>Сортировка:</h3>
               <ul class="sorting-filter">
-                <li class="sorting-filter-item"><a class="by-price">По цене</a></li>
+                <li class="sorting-filter-item"><a class="by-price sorting-filter-active">По цене</a></li>
                 <li class="sorting-filter-item"><a class="by-type" href="#">По типу</a></li>
                 <li class="sorting-filter-item"><a class="by-fynctional" href="#">По функционалу</a></li>
-                <li class="sorting-filter-item"><a class="by-ascending" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+                <li class="sorting-filter-item"><a class="by-ascending sorting-button-active" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
                 <li class="sorting-filter-item"><a class="by-descending" href="#"><span class="visually-hidden">По убыванию</span></a></li>
               </ul>
             </div>
@@ -210,9 +195,8 @@
                 <p class="new-price">25500 p.</p>
               </li>
 
-              <li class="catalog-item">
-                <span class="new-flag"></span>
-                <figure class="image">
+              <li class="catalog-item new-flag">
+                  <figure class="image">
                   <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                 </figure>
                 <div class="action">
@@ -236,8 +220,7 @@
                 <p class="new-price">15500 p.</p>
               </li>
 
-              <li class="catalog-item">
-                <span class="new-flag"></span>
+              <li class="catalog-item new-flag">
                 <figure class="image">
                   <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                 </figure>
@@ -262,8 +245,7 @@
                 <p class="new-price">15500 p.</p>
               </li>
 
-              <li class="catalog-item">
-                <span class="new-flag"></span>
+              <li class="catalog-item new-flag">
                 <figure class="image">
                   <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                 </figure>
@@ -303,15 +285,15 @@
             </ul>
 
             <ul class="paginator">
-              <li><a href="#">1</a></li>
+              <li><a class="active" href="#">1</a></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
-              <li><button type="button">Следующая</button></li>
+              <li><a href="#">Следующая</a></li>
             </ul>
           </section>
         </div>
 
-        <section class="item-added-popup">
+        <section class="modal item-added-popup">
           <h2 class="popup-title">Товар добавлен в корзину!</h2>
           <div class="popup-button-container">
             <a class="make-buy" href="#">Оформить заказ</a>
@@ -334,7 +316,7 @@
             </p>
           </div>
         </section>
-.
+
 
 
     </main>
@@ -387,6 +369,7 @@
       </div>
 
     </footer>
+    <script src="js/item-added.js"></script>
   </body>
 </html>
 

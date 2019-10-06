@@ -184,7 +184,7 @@
                 <img src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
               </figure>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item new-flag">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <p class="new-price">12500 Р.</p>
               <div class="action">
@@ -257,9 +257,9 @@
           </p>
 
           <div class="service-wrap">
-            <input type="radio" name="service-radio" id="deliviry-slide" checked>
-            <input type="radio" name="service-radio" id="guarantee-slide">
-            <input type="radio" name="service-radio" id="credit-slide">
+            <input class="slide1-btn" type="radio" name="service-radio" id="deliviry-slide" checked>
+            <input class="slide2-btn" type="radio" name="service-radio" id="guarantee-slide">
+            <input class="slide3-btn" type="radio" name="service-radio" id="credit-slide">
             <ul class="service-navigation">
               <li>
                 <label for="deliviry-slide">Доставка</label>
@@ -281,24 +281,23 @@
                 </p>
 
               </div>
-              <!-- <div class="service-warranty">
+              <div class="service-slides slide-2">
                   <h3>Гарантия</h3>
-                  <p>Если купленный у нас товар поломается или заскрипит,
-                    а также в случае пожара, спровоцированного его возгаранием,
-                    вы всегда можете быть уверены в нашей гарантии. Мы обменяем
-                    сгоревший товар на новый.
+                  <p>Если купленный у нас товар поломается или заискрит<br>
+                    а также в случае пожара, спровоцированного его возгаранием,<br>
+                    вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                    сгоревший товар на новый.<br>
                     Дом уж восстановите как-нибудь сами.
                   </p>
 
               </div>
-              <div class="service-credit">
+              <div class="service-slides slide-3">
                   <h3>Кредит</h3>
-                  <p>Залезть в долговую яму стало проще!
+                  <p>Залезть в долговую яму стало проще!<br>
                     Кредитные консультанты придут вам на помощь.
                   </p>
-
                   <a href="#">Отправить заявку</a>
-              </div>-->
+              </div>
             </div>
 
 
@@ -327,24 +326,24 @@
           <p>Вы можете забрать товар сами,<br>
              заехав в наш офис:</p>
           <figure class="map">
-            <a href="https://www.google.ru/maps/">
+            <a class="map-link" href="#">
             <img src="img/map.jpg" width="300" height="158" alt="Мы на карте, Б.Конюшенная ул., 19">
             </a>
-            <!--пока сделал так, в дальнейшем хочу сделать так: Клик по ней приводит к появлению полного размера интерактивной карты
-              (смотрите папку слоёв «map hover»). Окно позиционируется относительно вьюпорта, а не страницы. Реализация по желанию.
-              Желание есть, знаний не хватает-->
           </figure>
-          <button type="button">Заблудились? Напишите нам!</button>
+          <a class="write-us-link" href="#">Заблудились? Напишите нам!</a>
         </section>
       </div>
 
-      <section class="map-popup container">
-        <img src="img/map-popup.jpg" alt="Мы на карте, Б.Конюшенная ул., 19" width="940" height="446">
-        <button type="button"><span class="visually-hidden">Закрыть</span></button>
+      <section class="modal map-popup">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        width="940px" height="560" allowfullscreen>
+        </iframe>
+        <!-- <img src="img/map-popup.jpg" alt="Мы на карте, Б.Конюшенная ул., 19" width="940" height="446"> -->
+        <button class="close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
       </section>
 
-      <section class="write-us-popup">
-        <form action="#" method="post">
+      <section class="modal write-us-popup">
+        <form class="write-us-form" action="#" method="post">
           <p class="form-item">
             <label for="name-field">Ваше имя:</label>
             <input type="text" name="for-name" id="name-field" placeholder="Имя Фамилия">
@@ -414,5 +413,8 @@
       </div>
 
     </footer>
+    <script src="js/map-popup.js"></script>
+    <script src="js/write-us.js"></script>
+
   </body>
 </html>
