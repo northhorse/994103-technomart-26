@@ -17,3 +17,12 @@ close.addEventListener("click", function(evt){
 
 })
 
+window.addEventListener("keydown", function(evt){
+  if (evt.keyCode === 27){
+    if(map.classList.contains("modal-show")){
+      evt.preventDefault();
+      map.classList.remove("modal-show");
+      map.classList.remove("modal-error")
+    }
+  }
+})

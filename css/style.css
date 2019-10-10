@@ -486,12 +486,12 @@ li {
   content: "";
   position: absolute;
   width: 4px;
-  height: 5px;
+  height: 4px;
   right: 0px;
   top: 7px;
-  background-image: url("../img/dot.png");
-  background-position: center;
-  background-repeat: no-repeat;
+
+  border: 2px solid #32425c;
+  border-radius: 50%;
 }
 
 .personal-area {
@@ -746,6 +746,36 @@ li {
 
 }
 
+.slider-container .switch {
+  position: absolute;
+
+  top: 114px;
+
+  width: 22px;
+  height: 40px;
+
+  cursor: pointer;
+
+}
+
+.slider-container .switch-left {
+  left: 25px;
+  background-image: url("../img/icon-left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.slider-container .switch-right {
+  right: 25px;
+  background-image: url("../img/icon-right.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+
+
 .slider-container input {
   display: none;
 }
@@ -787,9 +817,6 @@ li {
   position: relative;
   width: 6px;
   border-radius: 50%;
-
-
-
 
 }
 
@@ -1440,12 +1467,6 @@ li {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
-
-  /* background-image: url("../img/red-line.png");
-  background-repeat: no-repeat;
-  background-position-x: 0px;
-  background-position-y: 8px; Капец я с ними провозился */
-
 }
 
 .deliviry-company li::before {
@@ -1495,27 +1516,31 @@ li {
 }
 
 .map-popup {
-  /* position: relative; */
+
   width: 940px;
   height: 446px;
   top: 120px;
-  left: 50%;
+  left: 55%;
 
   margin-left: -550px;
-  padding: 50px 80px;
+
+  background-image: url("../img/map-popup.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
 
   display: none;
+  box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
 }
 
 
 
 
  .map-popup iframe {
-  display: block;
-  margin-left: auto;
+  display:block;
+  width: 940px;
+  height: 446px;
   border: none;
 
- box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
 }
 
 .button-container .close-button,
@@ -1533,8 +1558,8 @@ li {
 }
 
 .map-popup .close-button{
-  top: 60px;
-  right: -70px;
+  top: 10px;
+  right: 10px;
 }
 
 .write-us-popup{
@@ -1543,7 +1568,6 @@ li {
   left: 50%;
 
   margin-left: -325px;
-  /* padding: 10px 10px; */
   border-top: 7px solid #ff5257;
   background-color: #ffffff;
   box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
@@ -2279,7 +2303,7 @@ form {
   fill: rgba(181, 181, 181, 0.3);
 }
 
-.filter-option h3 {
+.filter-option label {
   margin: 0;
   padding: 0;
 
@@ -2503,10 +2527,7 @@ form {
   20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
 
-.modal-error {
-  animation-name: shake;
-  animation-duration: 0.6s;
-}
+
 
 
 .modal-show {
@@ -2516,3 +2537,7 @@ form {
 }
 
 
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
