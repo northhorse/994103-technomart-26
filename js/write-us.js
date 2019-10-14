@@ -18,27 +18,23 @@ popupBtn.addEventListener("click", function(evt){
 
 });
 
+closeModal.addEventListener("click", function(evt){
+  evt.preventDefault();
+  popupModal.classList.remove("modal-show");
+  popupModal.classList.remove("modal-error")
+});
 
-
-submitBtn.addEventListener("click", function(evt){
-
-
+form.addEventListener("submit", function(evt){
   if(!login.value || !mail.value || !letter.value) {
-
     evt.preventDefault();
+    popupModal.classList.remove("modal-error");
+    popupModal.offsetWidth = popupModal.offsetWidth;
     popupModal.classList.add("modal-error");
 
   }
 
 })
 
-
-
-closeModal.addEventListener("click", function(evt){
-  evt.preventDefault();
-  popupModal.classList.remove("modal-show");
-  popupModal.classList.remove("modal-error")
-});
 
 window.addEventListener("keydown", function(evt){
   if (evt.keyCode === 27){
