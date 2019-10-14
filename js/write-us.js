@@ -18,15 +18,21 @@ popupBtn.addEventListener("click", function(evt){
 
 });
 
-submitBtn.addEventListener("click", function(evt){
-  if(!login.value || !mail.value || !letter.value) {
-    evt.preventDefault();
 
+
+submitBtn.addEventListener("click", function(evt){
+
+
+  if(!login.value || !mail.value || !letter.value) {
+
+    evt.preventDefault();
     popupModal.classList.add("modal-error");
 
   }
 
 })
+
+
 
 closeModal.addEventListener("click", function(evt){
   evt.preventDefault();
