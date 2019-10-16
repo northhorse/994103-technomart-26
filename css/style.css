@@ -252,6 +252,7 @@ li {
   padding-left: 21px;
   padding-right: 21px;
   background-color: #63a63e;
+
 }
 
 
@@ -318,11 +319,10 @@ li {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.button-order:focus {
+.user-order .button-order:focus {
   background-color: #63a63e;
+
 }
-
-
 /*  второй раздел хедера */
 
 
@@ -1922,7 +1922,7 @@ li {
   padding: 0px;
   padding-top: 23px;
 
-  outline: 1px solid tomato;
+
 }
 
 .footer-navigation-list li {
