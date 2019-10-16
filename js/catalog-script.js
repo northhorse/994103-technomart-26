@@ -1,12 +1,11 @@
+// item-added
 
 var buyItems = document.querySelectorAll(".buy");
 var modalMessage = document.querySelector(".item-added-popup");
 var closebtn = modalMessage.querySelector(".close-button");
 
 
-
-
-
+// item-added
 buyItems.forEach(function(item){
   item.addEventListener("click", function(evt){
     evt.preventDefault();
