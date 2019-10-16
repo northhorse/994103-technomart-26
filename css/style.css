@@ -3179,9 +3179,6 @@ li
     }
 }
 
-
-
-
 .modal-show
 {
     display: block;
@@ -3189,7 +3186,6 @@ li
     animation-name: bounce;
     animation-duration: .6s;
 }
-
 
 .modal-error
 {
