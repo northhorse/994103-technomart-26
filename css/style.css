@@ -364,7 +364,6 @@ li
     color: #ee3643;
 }
 
-
 .contacts
 {
     font-size: 14px;
@@ -547,8 +546,6 @@ li
     color: #000;
 }
 
-
-
 .user-name svg
 {
     position: absolute;
@@ -556,16 +553,12 @@ li
     left: 13px;
 }
 
-
-
 .user-name:active path,
 .log-out:active path,
 .user-login a:active path
 {
     fill: #c5c5c5;
 }
-
-
 
 .log-out
 {
@@ -622,7 +615,6 @@ li
 }
 
 
-
 /* Третий раздел хедера - Навигация сайта в хедере */
 
 .site-navigation
@@ -677,7 +669,6 @@ li
     color: rgba(255, 255, 255, .5);
     background-color: #1d2739;
 }
-
 
 /* индекс хтмл мейн */
 
