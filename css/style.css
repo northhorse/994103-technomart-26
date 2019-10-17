@@ -22,11 +22,6 @@ a
     text-decoration: none;
 }
 
-li
-{
-    list-style: none;
-}
-
 .visually-hidden
 {
     position: absolute;
@@ -235,6 +230,8 @@ li
     width: 150px;
     margin: 0;
     padding: 0;
+
+    list-style: none;
 }
 
 .user-order a
@@ -440,7 +437,7 @@ li
     margin: 0;
     padding: 0;
 
-    background-color: tomato;
+    list-style: none;
 }
 
 .user-login li:first-child
@@ -518,6 +515,12 @@ li
     align-content: space-between;
 }
 
+
+.user-logined li
+{
+    list-style: none;
+}
+
 .user-logined li:first-child
 {
     position: relative;
@@ -555,7 +558,7 @@ li
 
 .user-name:active path,
 .log-out:active path,
-.user-login a:active path
+.login-link:active path
 {
     fill: #c5c5c5;
 }
@@ -640,6 +643,7 @@ li
 .site-navigation li
 {
     min-height: 60px;
+    list-style: none;
 }
 
 .site-navigation a
@@ -679,6 +683,8 @@ li
 
     width: 300px;
     min-height: 123px;
+
+    list-style: none;
 }
 
 /* первая секция промо меню*/
@@ -1193,7 +1199,7 @@ li
     margin-bottom: 20px;
 
     text-align: center;
-
+    list-style: none;
     border: 1px solid #eaeaea;
 
     justify-content: flex-start;
@@ -1456,6 +1462,8 @@ li
 {
     margin-right: 20px;
     margin-bottom: 20px;
+
+    list-style: none;
 }
 
 .top-manufacturer li:nth-child(4n)
@@ -1672,6 +1680,8 @@ li
     width: 240px;
     min-height: 61px;
 
+    list-style: none;
+
     background-color: #32425c;
     box-shadow: inset 0 1px 0 0 #405069,
     0 1px 0 0 #293449;
@@ -1832,6 +1842,8 @@ li
     margin-bottom: 20px;
     margin-left: 0;
     padding-left: 37px;
+
+    list-style: none;
 }
 
 .deliviry-company li::before
@@ -2168,6 +2180,8 @@ li
     margin-bottom: 8px;
     margin-left: 40px;
     padding: 15px 0 10px 19px;
+
+    list-style: none;
 }
 
 .footer-navigation-list a
@@ -2218,13 +2232,14 @@ li
 .social-list
 {
     display: flex;
+    justify-content: space-between;
 
     width: 130px;
     margin: 0;
     margin-left: 140px;
     padding: 0;
 
-    justify-content: space-between;
+    list-style: none;
 }
 
 .vkontakte-link,
@@ -2344,6 +2359,7 @@ li
     position: relative;
 
     margin-right: 39px;
+    list-style: none;
 }
 
 .breadcrumbs li:not(:first-child)::before
@@ -2487,6 +2503,8 @@ li
 {
     margin: 0;
     padding: 0;
+
+    list-style: none;
 }
 
 .content-container
@@ -2744,6 +2762,10 @@ li
     padding: 0;
 }
 
+.filter-group li {
+  list-style: none;
+}
+
 
 .filter-option
 {
@@ -2930,6 +2952,8 @@ li
     margin-bottom: 10px;
 
     text-align: center;
+
+    list-style: none;
 }
 
 .paginator a:hover
