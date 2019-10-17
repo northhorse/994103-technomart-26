@@ -142,15 +142,15 @@ li
     padding-bottom: 11px;
     padding-left: 49px;
 
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+
     border: none;
     background-color: #293449;
 }
 .top-header input[type='search']::placeholder
 {
-    font-family: 'Cuprum', Arial, sans-serif;
-    font-size: 17px;
-    line-height: 18px;
-
     color: #fff;
 }
 
@@ -3003,10 +3003,6 @@ li
     color: #000;
 }
 
-
-
-
-
 /* Товар добавлен в корзину попап */
 
 .item-added-popup
@@ -3016,9 +3012,7 @@ li
     top: 200px;
     left: 50%;
 
-    display: flex;
     display: none;
-    flex-direction: column;
 
     width: 620px;
     margin-left: -310px;
@@ -3044,7 +3038,7 @@ li
 
     width: 100%;
     margin: 0 0;
-    margin-left: 50px;
+    margin-left: 26px;
     padding: 65px 0;
 }
 .item-added-popup .popup-title::before
@@ -3090,7 +3084,6 @@ li
 
     width: 220px;
     margin: 0;
-    padding: 10px 0;
 
     text-transform: uppercase;
 
@@ -3100,7 +3093,7 @@ li
 .popup-button-container .make-buy
 {
     margin-right: 20px;
-    padding-top: 9px;
+    padding-top: 12px;
     padding-bottom: 9px;
 
     color: #fff;
@@ -3111,7 +3104,7 @@ li
 
 .popup-button-container .сontinue-shopping
 {
-    padding-top: 9px;
+    padding-top: 12px;
     padding-bottom: 9px;
 
     color: #000;
